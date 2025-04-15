@@ -158,7 +158,7 @@ export default function Ourtechstack() {
                                     <button
                                         key={tab.id}
                                         onClick={(e) => handleTabClick(tab.id, e)}
-                                        className={`text-[#343434] text-[18px] sm:text-[23px] font-[400] whitespace-nowrap ${activeTab === tab.id ? "text-black" : "text-muted-foreground"
+                                        className={`text-[#343434]  text-[18px] sm:text-[23px] font-[400] whitespace-nowrap ${activeTab === tab.id ? "text-black" : "text-muted-foreground"
                                             }`}
                                     >
                                         {tab.label}

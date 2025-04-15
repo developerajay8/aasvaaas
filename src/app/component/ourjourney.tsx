@@ -136,7 +136,7 @@ export default function Ourjourney() {
     return (
         <div className=" bg-[#FFFFFF] ms:py-[80px] py-[48px] overflow-auto  ">
             <div className="max-w-[1240px] mx-auto xl:px-0 px-[16px] ">
-                <h1 className="sm:text-[60px] text-[40px] text-[#000000] font-[400] mb-6">Our Tech Stack</h1>
+                <h1 className="sm:text-[60px] text-[40px] text-[#000000] font-[400] mb-6">Our Journey</h1>
 
                 <div className="">
                     <div className="relative">

@@ -68,7 +68,7 @@
 'use client';
 
 import React, { useState } from 'react';
-import { Menu, X, Search, User } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import Link from 'next/link';
 import Mobilelogo from "../../../public/Group 44 (1).svg"
 import Logo from "../../../public/Group 44 (4).png"
