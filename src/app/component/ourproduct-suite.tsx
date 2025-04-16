@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { CircleIcon, Star, CircleDotIcon } from "lucide-react";
+import { CircleIcon } from "lucide-react";
 import Image from "next/image";
 import Frame from "../../../public/Frame 128.png"
 import Frame2 from "../../../public/Frame 129.png"
@@ -77,7 +77,7 @@ export default function Ourproductsuite() {
         setActiveTab(tabId);
     };
 
-    const activeContent = tabs.find((tab) => tab.id === activeTab)?.content;
+    // const activeContent = tabs.find((tab) => tab.id === activeTab)?.content;
 
     return (
         <div className=" bg-[#FFFFFF] ms:py-[80px] py-[48px] overflow-auto  ">

@@ -14,19 +14,19 @@ export default function ContactForm() {
     agree: false,
   });
 
-  const handleChange = (e: any) => {
-    const { name, value, type, checked } = e.target;
-    setFormData(prev => ({
-      ...prev,
-      [name]: type === 'checkbox' ? checked : value,
-    }));
-  };
+  // const handleChange = (e: any) => {
+  //   const { name, value, type, checked } = e.target;
+  //   setFormData(prev => ({
+  //     ...prev,
+  //     [name]: type === 'checkbox' ? checked : value,
+  //   }));
+  // };
 
-  const handleSubmit = (e: any) => {
-    e.preventDefault();
-    // Handle form submission logic here
-    console.log('Submitted:', formData);
-  };
+  // const handleSubmit = (e: any) => {
+  //   e.preventDefault();
+  //   // Handle form submission logic here
+  //   console.log('Submitted:', formData);
+  // };
 
   return (
     <section className=" py-[48px] md:py-[80px] max-w-[1240px] xl:px-0 px-[16px] mx-auto">
@@ -35,7 +35,7 @@ export default function ContactForm() {
         <a href="#" className="underline">Book a call</a> or fill out the form below and we’ll get back <br className='ms:block hidden'/> to you once we’ve processed your request.
       </p>
 
-      <form onSubmit={handleSubmit} className="space-y-6 mt-[48px] ">
+      <form  className="space-y-6 mt-[48px] ">
         {/* 2-column layout */}
         <div className="grid md:grid-cols-2 gap-5">
           <div>
@@ -45,7 +45,7 @@ export default function ContactForm() {
               name="name"
               required
               value={formData.name}
-              onChange={handleChange}
+              
               className="sm:h-6 h-0 w-full border-b border-gray-400 focus:outline-none focus:border-black py-1"
             />
           </div>
@@ -57,7 +57,7 @@ export default function ContactForm() {
               name="company"
               required
               value={formData.company}
-              onChange={handleChange}
+              
               className="sm:h-6 h-0 w-full border-b border-gray-400 focus:outline-none focus:border-black py-1"
             />
           </div>
@@ -69,7 +69,7 @@ export default function ContactForm() {
               name="email"
               required
               value={formData.email}
-              onChange={handleChange}
+              
               className="sm:h-6 h-0 w-full border-b border-gray-400 focus:outline-none focus:border-black py-1"
             />
           </div>
@@ -81,7 +81,7 @@ export default function ContactForm() {
               name="phone"
               required
               value={formData.phone}
-              onChange={handleChange}
+              
               className="sm:h-6 h-0 w-full border-b border-gray-400 focus:outline-none focus:border-black py-1"
             />
           </div>
@@ -93,7 +93,7 @@ export default function ContactForm() {
               name="reason"
               required
               value={formData.reason}
-              onChange={handleChange}
+              
               className="w-full border-b border-gray-400 focus:outline-none focus:border-black py-1 bg-transparent"
             >
               <option value="" disabled>Select a reason</option>
@@ -113,7 +113,7 @@ export default function ContactForm() {
           <textarea
             name="message"
             value={formData.message}
-            onChange={handleChange}
+            
             className="sm:h-10 h-0  w-full border-b border-gray-400 focus:outline-none focus:border-black py-1 resize-none"
           ></textarea>
           <p className='text-[#9A9A9A] text-[10px] font-[400]'>Please include project details, duration, tech stack, IT professionals needed, and other relevant info</p>
@@ -127,7 +127,7 @@ export default function ContactForm() {
             name="message"
             rows={4}
             value={formData.message}
-            onChange={handleChange}
+            
             className="w-full border-b border-gray-400 focus:outline-none focus:border-black py-1 resize-none"
             placeholder="Please include project details, duration, tech stack, IT professionals needed, and other relevant info"
           ></textarea>
@@ -141,7 +141,7 @@ export default function ContactForm() {
             name="agree"
             required
             checked={formData.agree}
-            onChange={handleChange}
+            
             className="h-6  "
           />
           <p className='max-w-[409px] text-[#9A9A9A] text-[10px] font-[400]'>

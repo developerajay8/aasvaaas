@@ -20,7 +20,7 @@ export default function Home() {
       <Ourtechstack/>
       <Workwithus/>
       <Casestudies/>
-      {/* <ContactForm/> */}
+      <ContactForm/>
       <Footer/>
     </div>
   );
