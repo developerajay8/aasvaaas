@@ -1,33 +1,8 @@
 'use client';
 
-import { useState } from 'react';
 import { FaArrowRightLong } from 'react-icons/fa6';
 
 export default function ContactForm() {
-  const [formData, setFormData] = useState({
-    name: '',
-    company: '',
-    email: '',
-    phone: '',
-    reason: '',
-    message: '',
-    agree: false,
-  });
-
-  // const handleChange = (e: any) => {
-  //   const { name, value, type, checked } = e.target;
-  //   setFormData(prev => ({
-  //     ...prev,
-  //     [name]: type === 'checkbox' ? checked : value,
-  //   }));
-  // };
-
-  // const handleSubmit = (e: any) => {
-  //   e.preventDefault();
-  //   // Handle form submission logic here
-  //   console.log('Submitted:', formData);
-  // };
-
   return (
     <section className=" py-[48px] md:py-[80px] max-w-[1240px] xl:px-0 px-[16px] mx-auto">
       <h1 className="text-[#000000] sm:text-[60px] text-[40px] font-[400]">Contact us</h1>
@@ -44,7 +19,7 @@ export default function ContactForm() {
               type="text"
               name="name"
               required
-              value={formData.name}
+              
               
               className="sm:h-6 h-0 w-full border-b border-gray-400 focus:outline-none focus:border-black py-1"
             />
@@ -56,7 +31,6 @@ export default function ContactForm() {
               type="text"
               name="company"
               required
-              value={formData.company}
               
               className="sm:h-6 h-0 w-full border-b border-gray-400 focus:outline-none focus:border-black py-1"
             />
@@ -68,7 +42,6 @@ export default function ContactForm() {
               type="email"
               name="email"
               required
-              value={formData.email}
               
               className="sm:h-6 h-0 w-full border-b border-gray-400 focus:outline-none focus:border-black py-1"
             />
@@ -80,7 +53,6 @@ export default function ContactForm() {
               type="tel"
               name="phone"
               required
-              value={formData.phone}
               
               className="sm:h-6 h-0 w-full border-b border-gray-400 focus:outline-none focus:border-black py-1"
             />
@@ -92,7 +64,6 @@ export default function ContactForm() {
             <select
               name="reason"
               required
-              value={formData.reason}
               
               className="w-full border-b border-gray-400 focus:outline-none focus:border-black py-1 bg-transparent"
             >
@@ -112,7 +83,6 @@ export default function ContactForm() {
           <label className="block text-[14px] text-[#9A9A9A] font-[400]">Describe your needs in details</label>
           <textarea
             name="message"
-            value={formData.message}
             
             className="sm:h-10 h-0  w-full border-b border-gray-400 focus:outline-none focus:border-black py-1 resize-none"
           ></textarea>
@@ -120,18 +90,7 @@ export default function ContactForm() {
         </div>
 
 
-        {/* Message */}
-        {/* <div>
-          <label className="block text-[14px] text-[#9A9A9A] font-[400] ">Describe your needs in details</label>
-          <textarea
-            name="message"
-            rows={4}
-            value={formData.message}
-            
-            className="w-full border-b border-gray-400 focus:outline-none focus:border-black py-1 resize-none"
-            placeholder="Please include project details, duration, tech stack, IT professionals needed, and other relevant info"
-          ></textarea>
-        </div> */}
+       
 
 <div className="flex justify-between gap-4">
         {/* Privacy Agreement */}
@@ -140,7 +99,6 @@ export default function ContactForm() {
             type="checkbox"
             name="agree"
             required
-            checked={formData.agree}
             
             className="h-6  "
           />
