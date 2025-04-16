@@ -196,14 +196,14 @@ export default function Ourjourney() {
                             ))}
                         </div> */}
                         <div className="overflow-x-auto overflow-hidden">
-                            <div className="flex whitespace-nowrap space-x-8 sm:space-x-15 mb-1">
+                            <div className="flex  whitespace-nowrap space-x-8 sm:space-x-15 mb-1">
                                 {tabs.map((tab) => (
-                                    <div className="flex flex-col" key={tab.id}>
+                                    <div className="flex cursor-pointer flex-col" key={tab.id}>
                                         <span className="text-[#343434] text-[14px] font-[400] ">{tab.date}</span>
                                         <button
 
                                             onClick={(e) => handleTabClick(tab.id, e)}
-                                            className={`text-[#343434] text-[18px] sm:text-[23px] font-[400] whitespace-nowrap ${activeTab === tab.id ? "text-black" : "text-muted-foreground"
+                                            className={`text-[#343434] cursor-pointer text-[18px] sm:text-[23px] font-[400] whitespace-nowrap ${activeTab === tab.id ? "text-black" : "text-muted-foreground"
                                                 }`}
                                         >
                                             {tab.label}

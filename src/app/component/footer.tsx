@@ -1,11 +1,14 @@
 import Image from "next/image";
-import { FaFacebookF, FaLinkedinIn, FaYoutube, FaTimes, FaPhone, FaMapMarkerAlt, FaPaperPlane } from "react-icons/fa";
+import { FaFacebookF, FaLinkedinIn, FaYoutube, FaTimes, FaPhoneAlt, FaMapMarkerAlt, FaPaperPlane } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import Footerlogo from "../../../public/Group 44 (2).svg"
 
 const Footer = () => {
     return (
-        <footer className="bg-black text-white md:py-[80px] py-[48px] xl:px-0 px-[16px] overflow-hidden">
+        <>
+        <footer style={{
+            backgroundImage: 'url("/Banner BG Footer.png")',
+          }} className=" text-white w-full bg-cover bg-center md:py-[80px] py-[48px] xl:px-0 px-[16px] overflow-hidden">
             {/* Optional background glow */}
             <div className="  max-w-[1240px] mx-auto sm:flex justify-between gap-[80px]   ">
                 {/* Logo & About */}
@@ -51,7 +54,7 @@ const Footer = () => {
                 <div className="max-w-[426px]">
                     <h3 className="text-[23px] font-[400] text-[#E6E6E6] mb-6">Contact</h3>
                     <div className="">
-                        <div className="flex items-center gap-2 py-[10px] text-[14px] font-[400] text-[#F6F6F6]"><FaPhone className="text-[#FFFF00]" /> +91 80588 88814</div>
+                        <div className="flex items-center gap-2 py-[10px] text-[14px] font-[400] text-[#F6F6F6]"><FaPhoneAlt className="text-[#FFFF00]" /> +91 80588 88814</div>
                         <div className="flex items-center py-[10px] text-[14px] font-[400] text-[#F6F6F6] gap-2"><MdEmail className="text-[#FFFF00]" /> info@aasvaa.in</div>
                         <div className="flex items-start gap-2 py-[10px] text-[14px] font-[400] text-[#F6F6F6]">
                             <FaMapMarkerAlt className="text-[#FFFF00] mt-1" />
@@ -83,6 +86,25 @@ const Footer = () => {
             </div>
             
         </footer>
+
+        <footer className="w-full bg-[#E6E6E6] py-4">
+      <div className="max-w-[1240px] mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
+        
+        {/* Left */}
+        <div className="text-[14px] text-[#1B1B1B] font-[600]">
+          © All Copyright 2025 by Aasyaa Ltd.
+        </div>
+        
+
+        {/* Right Links */}
+        <div className="text-[#1B1B1B] text-[14px] font-[600] flex items-center space-x-3">
+          <a href="#" className="hover:underline">Terms of Use</a>
+          <span>|</span>
+          <a href="#" className="hover:underline">Privacy Policy</a>
+        </div>
+      </div>
+    </footer>
+        </>
     );
 };
 

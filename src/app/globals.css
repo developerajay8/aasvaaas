@@ -29,3 +29,8 @@ body {
 ::-webkit-scrollbar {
   display: none;
 }
+
+
+.footer-banner{
+  background: url("../../public/Banner\ BG\ Footer.png") no-repeat ;
+}

@@ -87,7 +87,7 @@ export default function Ourproductsuite() {
                 <div className="">
                     <div className="relative">
                         <div className="overflow-x-auto overflow-hidden">
-                            <div className="flex whitespace-nowrap space-x-6 sm:space-x-8  mb-1">
+                            <div className="flex cursor-pointer whitespace-nowrap space-x-6 sm:space-x-8  mb-1">
                                 {tabs.map((tab) => (
                                     <button
                                         key={tab.id}
@@ -129,14 +129,25 @@ export default function Ourproductsuite() {
 
 
                         <div className="">
-                            <div className="sm:flex ">
-                                <div className="sm:w-[30%] gap-6 sm:mb-0  w-[100%] sm:flex-none flex items-center sm:border-r-[0.4px] sm:border-[#9A9A9A] sm:mr-[80px]">
+                            <div className=" sm:flex ">
+
+                                <div className="w-[30%] gap-6 sm:mb-0 sm:block hidden border-r-[0.4px] border-[#9A9A9A] mr-[80px]">
                                     <div className="sm:text-[40px] text-[28px] font-[400] text-[#343434]">GoJuris.ai</div>
                                     <div className="sm:text-[40px] text-[28px] font-[400] sm:pt-[24px] text-[#9A9A9A]">AasvaaEra</div>
-                                    <div className="border[2px] border-b sm:hidden block border-[#9A9A9A] py-[32px]"></div>
+                                    
                                 </div>
 
-                                <div className="sm:w-[70%] w-[100%] "> 
+                                <div className="sm:hidden block mb-[24px]">
+                                <div className="  gap-6  w-[100%] flex  sm:border-r-[0.4px] sm:border-[#9A9A9A] sm:mr-[80px]">
+                                    <div className="sm:text-[40px] text-[28px] font-[400] text-[#343434]">GoJuris.ai</div>
+                                    <div className="sm:text-[40px] text-[28px] font-[400] sm:pt-[24px] text-[#9A9A9A]">AasvaaEra</div>
+                                    
+                                </div>
+                                </div>
+
+
+
+                                <div className="sm:w-[70%] w-[100%] ">
                                     <div className="grid grid-cols-2 gap-5">
                                         {/* Left Column - Logo and Title */}
                                         <Image src={Frame} alt="" />

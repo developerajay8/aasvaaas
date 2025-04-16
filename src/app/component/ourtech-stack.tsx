@@ -153,7 +153,7 @@ export default function Ourtechstack() {
                             ))}
                         </div> */}
                         <div className="overflow-x-auto overflow-hidden">
-                            <div className="flex whitespace-nowrap space-x-6 sm:space-x-8  mb-1">
+                            <div className="flex cursor-pointer whitespace-nowrap space-x-6 sm:space-x-8  mb-1">
                                 {tabs.map((tab) => (
                                     <button
                                         key={tab.id}

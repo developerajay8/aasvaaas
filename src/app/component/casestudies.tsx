@@ -70,7 +70,7 @@ export default function Casestudies() {
                             {/* Hover Content */}
                             <div className="absolute inset-0 p-6 flex flex-col justify-end transform transition-transform duration-300 translate-y-full group-hover:translate-y-0">
                                 <div className="space-y-2">
-                                    <span className="inline-block px-3 py-1 text-sm text-white bg-primary/30 backdrop-blur-sm rounded-full">
+                                    <span className="inline-block py-1 text-sm text-white bg-primary/30 backdrop-blur-sm rounded-full">
                                         {study.category}
                                     </span>
                                     <h3 className="text-white text-2xl font-bold">{study.title}</h3>

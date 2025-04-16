@@ -7,7 +7,9 @@ import Solvings4 from "../../../public/image 2 (5).png"
 
 export default function Solving() {
   return (
-    <div className='bg-[#000] '>
+    <div style={{
+      backgroundImage: 'url("/Banner BG.png")',
+    }}    className=' w-full bg-center bg-cover '>
       <div className="max-w-[1240px] mx-auto py-[48px] sm:py-[80px] lg:px-[0px] px-[16px]">
         <div className="font-[400]">
         <h1 className='text-[#FFFF00] text-[40px] md:text-[60px] sm:leading-[76px] leading-[40px]'>Problems We Solve</h1>

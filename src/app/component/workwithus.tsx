@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import React from 'react'
 import { FaArrowRightLong } from 'react-icons/fa6'
-import work1 from "../../../public/Group 181.png"
+import work1 from "../../../public/Banner Image Aasva.png"
 
 export default function Workwithus() {
     return (
@@ -65,7 +65,7 @@ export default function Workwithus() {
 
             <div className="bg-[#FFFFFF] md:pt-[80px] sm:pb-0 pb-[48px] pt-[48px]">
                 <div className="max-w-[1240px] mx-auto xl:px-0 px-[16px] sm:flex justify-between ">
-                    <div className="sm:hidden block">
+                    <div className="sm:hidden block ">
                         <Image src={work1} alt='' />
                     </div>
                     <div className="sm:max-w-[542px]">
@@ -86,13 +86,15 @@ export default function Workwithus() {
                             </button>
                         </div>
                     </div>
-                    <div className="sm:block hidden">
+                    <div className="sm:block hidden ">
                         <Image src={work1} alt='' />
                     </div>
                 </div>
             </div>
 
-            <section className="bg-black text-white md:py-[80px] py-[48px] relative overflow-hidden">
+            <section style={{
+            backgroundImage: 'url("/Banner BG.png")',
+          }}  className="w-full bg-cover bg-center text-white md:py-[80px] py-[48px] relative overflow-hidden">
                 {/* Optional background glow */}
                 <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-yellow-400/10 to-yellow-400/5 pointer-events-none z-0" />
 
