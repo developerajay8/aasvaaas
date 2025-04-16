@@ -5,47 +5,12 @@ import { motion } from "framer-motion";
 import { CircleIcon, CircleDotIcon } from "lucide-react";
 import Image from "next/image";
 
-// const tabs = [
-//     {
-//         id: "ai-frameworks",
-//         label: "AI Frameworks",
-//         content: [
-//             {
-//                 title: "TensorFlow",
-//                 icon: CircleIcon,
-//                 description: "Open-source machine learning framework developed by Google"
-//             }
-//         ]
-//     },
-//     {
-//         id: "cloud-edge",
-//         label: "Cloud & Edge Computing",
-//         content: [
-//             {
-//                 title: "PyTorch",
-//                 icon: CircleIcon,
-//                 description: "Open source machine learning library developed by Facebook"
-//             }
-//         ]
-//     },
-//     {
-//         id: "language-models",
-//         label: "Language Models",
-//         content: [
-//             {
-//                 title: "OpenCV",
-//                 icon: CircleDotIcon,
-//                 description: "Open source computer vision and machine learning library"
-//             }
-//         ]
-//     }
-// ];
-
 
 const tabs = [
     {
-        id: "ai-frameworks",
-        label: "AI Frameworks",
+        id: "incorporated",
+        label: "incorporated",
+        date: "Jan 2024",
         content: [
             {
                 title: "TensorFlow",
@@ -68,8 +33,9 @@ const tabs = [
         ]
     },
     {
-        id: "cloud-edge",
-        label: "Cloud & Edge Computing",
+        id: "launch",
+        label: "launch",
+        date: "April 2024",
         content: [
             {
                 title: "PyTorch",
@@ -92,8 +58,84 @@ const tabs = [
         ]
     },
     {
-        id: "language-models",
-        label: "Language Models",
+        id: "Vision AI (Lumex)",
+        label: "Vision AI (Lumex)",
+        date: "June 2024",
+        content: [
+            {
+                title: "OpenCV",
+                icon: CircleDotIcon,
+                image: "/assets/Frame 145.png",
+                description: "Open source computer vision and machine learning library"
+            },
+            {
+                title: "GPT-4",
+                icon: CircleDotIcon,
+                image: "/assets/Frame 145.png",
+                description: "Large multimodal model developed by OpenAI"
+            },
+            {
+                title: "GPT-3",
+                icon: CircleDotIcon,
+                image: "/assets/Frame 145.png",
+                description: "Large multimodal model developed by OpenAI"
+            }
+        ]
+    },
+    {
+        id: "legal assistant development",
+        label: "legal assistant development",
+        date: "August 2024",
+        content: [
+            {
+                title: "OpenCV",
+                icon: CircleDotIcon,
+                image: "/assets/Frame 145.png",
+                description: "Open source computer vision and machine learning library"
+            },
+            {
+                title: "GPT-4",
+                icon: CircleDotIcon,
+                image: "/assets/Frame 145.png",
+                description: "Large multimodal model developed by OpenAI"
+            },
+            {
+                title: "GPT-3",
+                icon: CircleDotIcon,
+                image: "/assets/Frame 145.png",
+                description: "Large multimodal model developed by OpenAI"
+            }
+        ]
+    },
+    {
+        id: "GoJuris.ai goes live.",
+        label: "GoJuris.ai goes live.",
+        date: "March 2025",
+        content: [
+            {
+                title: "OpenCV",
+                icon: CircleDotIcon,
+                image: "/assets/Frame 145.png",
+                description: "Open source computer vision and machine learning library"
+            },
+            {
+                title: "GPT-4",
+                icon: CircleDotIcon,
+                image: "/assets/Frame 145.png",
+                description: "Large multimodal model developed by OpenAI"
+            },
+            {
+                title: "GPT-3",
+                icon: CircleDotIcon,
+                image: "/assets/Frame 145.png",
+                description: "Large multimodal model developed by OpenAI"
+            }
+        ]
+    },
+    {
+        id: "Dashboard",
+        label: "Dashboard",
+        date: "June 2025",
         content: [
             {
                 title: "OpenCV",
@@ -118,6 +160,7 @@ const tabs = [
 ];
 
 
+
 export default function Ourjourney() {
     const [activeTab, setActiveTab] = useState(tabs[0].id);
     const [indicatorWidth, setIndicatorWidth] = useState(0);
@@ -136,9 +179,9 @@ export default function Ourjourney() {
     return (
         <div className=" bg-[#FFFFFF] ms:py-[80px] py-[48px] overflow-auto  ">
             <div className="max-w-[1240px] mx-auto xl:px-0 px-[16px] ">
-                <h1 className="sm:text-[60px] text-[40px] text-[#000000] font-[400] mb-6">Our Journey</h1>
-
-                <div className="">
+                <h1 className="sm:text-[60px] text-[40px] text-[#000000] font-[400] ">Our Journey</h1>
+                <h5 className="text-[23px] text-[#343434] font-[400] ">From Startup to AI Powerhouse</h5>
+                <div className="pt-6">
                     <div className="relative">
                         {/* <div className=" flex-row flex overflow-x-scroll px-10 space-x-8 mb-1">
                             {tabs.map((tab) => (
@@ -153,24 +196,27 @@ export default function Ourjourney() {
                             ))}
                         </div> */}
                         <div className="overflow-x-auto overflow-hidden">
-                            <div className="flex whitespace-nowrap space-x-6 sm:space-x-8 px-4 sm:px-10 mb-1">
+                            <div className="flex whitespace-nowrap space-x-8 sm:space-x-15 mb-1">
                                 {tabs.map((tab) => (
-                                    <button
-                                        key={tab.id}
-                                        onClick={(e) => handleTabClick(tab.id, e)}
-                                        className={`text-[#343434] text-[18px] sm:text-[23px] font-[400] whitespace-nowrap ${activeTab === tab.id ? "text-black" : "text-muted-foreground"
-                                            }`}
-                                    >
-                                        {tab.label}
-                                    </button>
+                                    <div className="flex flex-col" key={tab.id}>
+                                        <span className="text-[#343434] text-[14px] font-[400] ">{tab.date}</span>
+                                        <button
+
+                                            onClick={(e) => handleTabClick(tab.id, e)}
+                                            className={`text-[#343434] text-[18px] sm:text-[23px] font-[400] whitespace-nowrap ${activeTab === tab.id ? "text-black" : "text-muted-foreground"
+                                                }`}
+                                        >
+                                            {tab.label}
+                                        </button>
+                                    </div>
                                 ))}
                             </div>
                         </div>
 
 
-                        <div className="h-px sm:w-full relative overflow-auto">
+                        <div className="h-[2px] sm:w-full relative overflow-auto">
                             <motion.div
-                                className="absolute h-px border-2 border-[#FFFF00] "
+                                className="absolute h-[2px] border-2 border-[#FFFF00] "
                                 animate={{
                                     width: indicatorWidth,
                                     x: indicatorOffset,

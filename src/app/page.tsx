@@ -7,6 +7,7 @@ import ContactForm from "./component/contact-from";
 import Casestudies from "./component/casestudies";
 import Ourtechstack from "./component/ourtech-stack";
 import Ourjourney from "./component/ourjourney";
+import Ourproductsuite from "./component/ourproduct-suite";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <Herosection/>
       <Ourjourney/>
       <Solving/>
+      <Ourproductsuite/>
       <Ourtechstack/>
       <Workwithus/>
       <Casestudies/>
